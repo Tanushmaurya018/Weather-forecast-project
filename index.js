@@ -7,7 +7,7 @@ const temperature = document.getElementById("temp");
 const locationbtn = document.getElementById("location-btn");
 
 async function getData(lat,lon){
-    const promise = await fetch(`http://api.weatherapi.com/v1/current.json?key=7a2a4898baf34471ac6105109232407&q=${lat},${lon}&aqi=yes`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/current.json?key=7a2a4898baf34471ac6105109232407&q=${lat},${lon}&aqi=yes`);
     return await promise.json();
 }
 
